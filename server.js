@@ -11,8 +11,6 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
 
-url = 'mongodb://saurabhkeskar:Saurabh$07@cluster0-shard-00-00.isvoe.mongodb.net:27017,cluster0-shard-00-01.isvoe.mongodb.net:27017,cluster0-shard-00-02.isvoe.mongodb.net:27017/foodorder?authSource=admin&compressors=zlib&retryWrites=true&w=majority&ssl=true';
-
 mongoose.connect(url).then(()=>{
     console.log("connected to the database ");
     
